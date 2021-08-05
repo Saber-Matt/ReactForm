@@ -1,6 +1,7 @@
-import React, { Component, } from 'react'
-import ReactDOM for 'ReactDOM'
-import Header from ''
+import React, { Component, } from 'react';
+import NewsSearch from '../../containers/NewsSearch';
+
+
 
 
 
@@ -9,9 +10,9 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <Header />
+        <NewsSearch />
       </>
-    )
+    );
   }
 }
 

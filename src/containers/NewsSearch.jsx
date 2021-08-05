@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React, { Component } from 'react';
 //import ArticleList, Search, API call from services
-import ArticleList from '../components/articles/ArticleList';
+import ArticleList from '../components/ArticleList/ArticleList.jsx';
 import Search from '../components/search/Search';
-import { getArticles } from '../services/news-utils';
+import { getArticles } from '../services/newsUtils.jsx';
 //setState w/articles and search, componentDidUpdate for API call
 export default class NewsSearch extends Component {
   state = {
@@ -23,7 +23,8 @@ export default class NewsSearch extends Component {
   }
 
   render() {
-    //search funcionality here? Look closer at this
+    const { search, articles } = this.state;
+    //search functionality here? Look closer at this
     return (
       <>
         <Search 
